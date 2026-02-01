@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="24506" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="23727"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="24506"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -69,7 +69,7 @@
                                                             <rect key="frame" x="8" y="0.0" width="114" height="24"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
-                                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nTs-Ht-MAm">
+                                                                <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nTs-Ht-MAm">
                                                                     <rect key="frame" x="0.0" y="4" width="114" height="16"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                                     <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="RHw-C3-OY7">
@@ -101,7 +101,7 @@
                                                             <rect key="frame" x="139" y="0.0" width="290" height="24"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
-                                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="58e-f7-Dnj">
+                                                                <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="58e-f7-Dnj">
                                                                     <rect key="frame" x="0.0" y="4" width="290" height="16"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                                     <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="lmN-Ir-O62">
@@ -122,7 +122,7 @@
                                     </subviews>
                                 </clipView>
                                 <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="5Hl-Nr-oPa">
-                                    <rect key="frame" x="1" y="213" width="438" height="16"/>
+                                    <rect key="frame" x="1" y="212" width="438" height="17"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="A3y-PO-wh4">
@@ -144,6 +144,9 @@
         <!--Application-->
         <scene sceneID="JPo-4y-FX3">
             <objects>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Quicksnap" customModuleProvider="target"/>
+                <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+                <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <application id="hnw-xV-0zn" sceneMemberID="viewController">
                     <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
                         <items>
@@ -475,18 +478,28 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Quicksnap" customModuleProvider="target"/>
-                <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
-                <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="531" y="595"/>
+            <point key="canvasLocation" x="579" y="559"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Pns-mr-Rry">
+            <objects>
+                <viewController id="mBJ-uu-4dX" sceneMemberID="viewController">
+                    <view key="view" id="FwT-wC-bpF">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="GFX-4Q-P3k" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="664" y="-213"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController showSeguePresentationStyle="single" id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Quicksnap" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" releasedWhenClosed="NO" animationBehavior="utilityWindow" id="IQv-IB-iLA" customClass="NSPanel">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" utility="YES"/>
+                    <window key="window" title="Quicksnap" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" releasedWhenClosed="NO" animationBehavior="utilityWindow" titlebarAppearsTransparent="YES" id="IQv-IB-iLA" customClass="NSPanel">
+                        <windowStyleMask key="styleMask" nonactivatingPanel="YES" fullSizeContentView="YES"/>
                         <windowCollectionBehavior key="collectionBehavior" fullScreenNone="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="632" y="369" width="480" height="270"/>
@@ -503,19 +516,18 @@
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="250"/>
+            <point key="canvasLocation" x="21" y="215"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
                 <viewController showSeguePresentationStyle="single" id="XfG-lQ-9wD" customClass="ViewController" customModule="Quicksnap" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="367" height="133"/>
+                    <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl" customClass="NSVisualEffectView">
+                        <rect key="frame" x="0.0" y="0.0" width="634" height="84"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button identifier="screenCaptureToggleBtn" toolTip="Capture entire screen" allowsExpansionToolTips="YES" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PBT-8b-ZX4">
-                                <rect key="frame" x="25" y="56" width="54" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <button identifier="screenCaptureToggleBtn" toolTip="Capture entire screen" allowsExpansionToolTips="YES" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PBT-8b-ZX4">
+                                <rect key="frame" x="25" y="7" width="54" height="51"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="fullscreen" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" inset="2" id="mKj-Jv-zQm">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -526,7 +538,7 @@
                                 </connections>
                             </button>
                             <button identifier="selectionCaptureToggleBtn" toolTip="Capture selection of screen" allowsExpansionToolTips="YES" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="80L-jT-mM6">
-                                <rect key="frame" x="83" y="49" width="64" height="63"/>
+                                <rect key="frame" x="83" y="0.0" width="64" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="selection" imagePosition="overlaps" alignment="center" inset="2" id="C9z-aQ-gBe">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -538,7 +550,7 @@
                                 </connections>
                             </button>
                             <button identifier="windowCaptureToggleBtn" toolTip="Capture window" allowsExpansionToolTips="YES" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pBx-r0-Rqv">
-                                <rect key="frame" x="146" y="49" width="64" height="63"/>
+                                <rect key="frame" x="146" y="0.0" width="64" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="window" imagePosition="only" alignment="center" inset="2" id="cyk-vc-m7W">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -550,7 +562,7 @@
                                 </connections>
                             </button>
                             <button identifier="movieCaptureToggleBtn" toolTip="Capture movie" allowsExpansionToolTips="YES" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jg0-5k-Ofi">
-                                <rect key="frame" x="209" y="50" width="64" height="63"/>
+                                <rect key="frame" x="209" y="1" width="64" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="fullscreen recording" imagePosition="only" alignment="center" inset="2" id="Y9r-DB-l9M">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -561,9 +573,8 @@
                                     <action selector="movieCaptureToggle:" target="XfG-lQ-9wD" id="3kr-yQ-WYj"/>
                                 </connections>
                             </button>
-                            <button identifier="movieSelectionCaptureToggleBtn" toolTip="Capture movie" allowsExpansionToolTips="YES" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UL1-rY-6xg">
-                                <rect key="frame" x="283" y="49" width="64" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <button identifier="movieSelectionCaptureToggleBtn" toolTip="Capture movie" allowsExpansionToolTips="YES" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UL1-rY-6xg">
+                                <rect key="frame" x="283" y="0.0" width="64" height="63"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="selection recording" imagePosition="only" alignment="center" inset="2" id="a0y-My-vgm">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -573,28 +584,8 @@
                                     <action selector="movieSelectionCaptureToggle:" target="XfG-lQ-9wD" id="Gtz-xs-xaI"/>
                                 </connections>
                             </button>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="seB-bz-gVU">
-                                <rect key="frame" x="18" y="9" width="99" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="push" title="Options..." bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="24d-bM-lQA">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <segue destination="5av-nX-pA8" kind="show" id="rg7-C8-t6U"/>
-                                </connections>
-                            </button>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yUD-di-YGY">
-                                <rect key="frame" x="117" y="9" width="115" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="push" title="Show History" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="rV5-Uv-NC8">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                            </button>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1QW-Xf-J1k">
-                                <rect key="frame" x="249" y="9" width="105" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1QW-Xf-J1k">
+                                <rect key="frame" x="509" y="26" width="105" height="32"/>
                                 <buttonCell key="cell" type="push" title="Capture" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="AW7-06-bxZ">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -606,7 +597,30 @@ DQ
                                     <action selector="MainCaptureBtnClicked:" target="XfG-lQ-9wD" id="p9q-OS-WqT"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="seB-bz-gVU">
+                                <rect key="frame" x="398" y="26" width="99" height="32"/>
+                                <buttonCell key="cell" type="push" title="Options..." bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="24d-bM-lQA">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="JKY-V4-xSA"/>
+                                    <constraint firstAttribute="width" constant="99" id="L0H-kv-7PC"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="5av-nX-pA8" kind="show" id="rg7-C8-t6U"/>
+                                </connections>
+                            </button>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="seB-bz-gVU" firstAttribute="leading" secondItem="UL1-rY-6xg" secondAttribute="trailing" constant="51" id="8pn-ZN-OV1"/>
+                            <constraint firstItem="1QW-Xf-J1k" firstAttribute="leading" secondItem="seB-bz-gVU" secondAttribute="trailing" constant="12" symbolic="YES" id="M9c-6G-6m2"/>
+                            <constraint firstItem="seB-bz-gVU" firstAttribute="firstBaseline" secondItem="1QW-Xf-J1k" secondAttribute="firstBaseline" id="Z1e-th-fh6"/>
+                            <constraint firstItem="seB-bz-gVU" firstAttribute="top" secondItem="PBT-8b-ZX4" secondAttribute="top" id="hFK-CU-6PS"/>
+                            <constraint firstItem="seB-bz-gVU" firstAttribute="baseline" secondItem="1QW-Xf-J1k" secondAttribute="baseline" id="j4b-SY-9yO"/>
+                            <constraint firstItem="seB-bz-gVU" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="jWY-iM-tOk"/>
+                            <constraint firstAttribute="trailing" secondItem="seB-bz-gVU" secondAttribute="trailing" constant="137" id="kXA-bm-0Wv"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="movieCaptureToggleBtn" destination="jg0-5k-Ofi" id="Jlx-gB-Dw1"/>
@@ -617,13 +631,17 @@ DQ
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <visualEffectView blendingMode="behindWindow" material="appearanceBased" state="followsWindowActiveState" id="H9O-WZ-PO6">
+                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </visualEffectView>
             </objects>
-            <point key="canvasLocation" x="18.5" y="586.5"/>
+            <point key="canvasLocation" x="63" y="535"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="dDc-LC-fHG">
             <objects>
-                <windowController showSeguePresentationStyle="single" id="5av-nX-pA8" sceneMemberID="viewController">
+                <windowController storyboardIdentifier="PreferencesWindowController" showSeguePresentationStyle="single" id="5av-nX-pA8" sceneMemberID="viewController">
                     <window key="window" title="Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="1PJ-ZQ-F5W">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
                         <windowCollectionBehavior key="collectionBehavior" fullScreenNone="YES"/>
@@ -652,7 +670,6 @@ DQ
                         <tabViewItem identifier="" image="icons8-settings-96" id="Gmk-gl-3og"/>
                         <tabViewItem identifier="" image="icons8-screenshot-96" id="lrL-O2-QHZ"/>
                         <tabViewItem image="watermark" id="Qek-Wr-jl5"/>
-                        <tabViewItem image="icons8-cafe-96" id="9oy-qu-9vg"/>
                     </tabViewItems>
                     <viewControllerTransitionOptions key="transitionOptions"/>
                     <tabView key="tabView" misplaced="YES" type="noTabsNoBorder" id="fo5-16-jHa">
@@ -668,7 +685,6 @@ DQ
                         <segue destination="7Je-GT-jqD" kind="relationship" relationship="tabItems" id="Ugx-MU-IRH"/>
                         <segue destination="0Tu-sD-Ldw" kind="relationship" relationship="tabItems" id="fji-iD-Fnf"/>
                         <segue destination="gat-cr-w8G" kind="relationship" relationship="tabItems" id="l4H-oe-Y8P"/>
-                        <segue destination="zgu-eI-lq4" kind="relationship" relationship="tabItems" id="srp-Ah-mBZ"/>
                     </connections>
                 </tabViewController>
                 <customObject id="ZGk-nc-o9z" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -683,7 +699,7 @@ DQ
                         <rect key="frame" x="0.0" y="0.0" width="416" height="210"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField identifier="filepath_field" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5uC-44-SNn">
+                            <textField identifier="filepath_field" focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5uC-44-SNn">
                                 <rect key="frame" x="106" y="65" width="157" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" state="on" title="~/Desktop" drawsBackground="YES" id="3Q5-Dc-lv8">
@@ -701,7 +717,7 @@ DQ
                                     <outlet property="nextKeyView" destination="X7D-FD-urK" id="U35-aK-fxh"/>
                                 </connections>
                             </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2bc-qG-U3s">
+                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2bc-qG-U3s">
                                 <rect key="frame" x="18" y="141" width="81" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="File name:" id="x04-ba-fQX">
@@ -710,7 +726,7 @@ DQ
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H7j-yW-onh">
+                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H7j-yW-onh">
                                 <rect key="frame" x="18" y="68" width="81" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Save to:" id="FKq-Yf-COf">
@@ -719,7 +735,7 @@ DQ
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wGG-2b-myE">
+                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wGG-2b-myE">
                                 <rect key="frame" x="18" y="32" width="81" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Save as:" id="9g8-gX-Laq">
@@ -762,7 +778,7 @@ DQ
                                     <binding destination="pEg-Yc-XJr" name="selectedIndex" keyPath="values.formatIndex" id="EjZ-R6-mg7"/>
                                 </connections>
                             </popUpButton>
-                            <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n8E-Tw-7TG">
+                            <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n8E-Tw-7TG">
                                 <rect key="frame" x="105" y="138" width="258" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Screenshot" drawsBackground="YES" id="I4P-cn-ICv">
@@ -830,11 +846,11 @@ DQ
             <objects>
                 <viewController title="Capture" showSeguePresentationStyle="single" id="0Tu-sD-Ldw" customClass="PrefsController" customModule="Quicksnap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="ZFG-Pb-aDl">
-                        <rect key="frame" x="0.0" y="0.0" width="416" height="332"/>
+                        <rect key="frame" x="0.0" y="0.0" width="416" height="273"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button tag="1" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BnG-YN-Ysb">
-                                <rect key="frame" x="18" y="296" width="138" height="18"/>
+                                <rect key="frame" x="18" y="237" width="138" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="check" title="Play capture sound" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="w2T-eO-OZG">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -845,7 +861,7 @@ DQ
                                 </connections>
                             </button>
                             <button tag="2" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JzD-qu-o5M">
-                                <rect key="frame" x="18" y="276" width="82" height="18"/>
+                                <rect key="frame" x="18" y="217" width="82" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="check" title="Use delay" bezelStyle="regularSquare" imagePosition="left" inset="2" id="RZT-Ua-8DI">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -856,7 +872,7 @@ DQ
                                 </connections>
                             </button>
                             <button tag="4" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jTQ-k8-aDm">
-                                <rect key="frame" x="18" y="256" width="312" height="18"/>
+                                <rect key="frame" x="18" y="197" width="312" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="check" title="Copy capture to clipboard instead of saving file" bezelStyle="regularSquare" imagePosition="left" inset="2" id="NLa-FL-eGX">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -867,7 +883,7 @@ DQ
                                 </connections>
                             </button>
                             <button tag="5" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zuf-b7-nIf">
-                                <rect key="frame" x="18" y="234" width="225" height="18"/>
+                                <rect key="frame" x="18" y="175" width="225" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="check" title="Capture cursor in the screenshot" bezelStyle="regularSquare" imagePosition="left" inset="2" id="naJ-GP-mzy">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -877,19 +893,8 @@ DQ
                                     <binding destination="wNl-lz-Ezq" name="value" keyPath="values.captureCursorSetting" id="bYb-VQ-0pB"/>
                                 </connections>
                             </button>
-                            <button tag="5" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gRz-fI-C1b">
-                                <rect key="frame" x="18" y="211" width="198" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="check" title="Reduce saved screenshot to" bezelStyle="regularSquare" imagePosition="left" inset="2" id="jQI-pw-QZC">
-                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <binding destination="wNl-lz-Ezq" name="value" keyPath="values.captureCursorSetting" id="ILb-wS-tpg"/>
-                                </connections>
-                            </button>
-                            <textField verticalHuggingPriority="750" fixedFrame="YES" tag="3" translatesAutoresizingMaskIntoConstraints="NO" id="SYi-cG-Q0x">
-                                <rect key="frame" x="108" y="274" width="46" height="22"/>
+                            <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" tag="3" translatesAutoresizingMaskIntoConstraints="NO" id="SYi-cG-Q0x">
+                                <rect key="frame" x="108" y="215" width="46" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="2" drawsBackground="YES" id="7bE-wD-WBM">
                                     <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="LJB-5H-3hC"/>
@@ -901,18 +906,8 @@ DQ
                                     <binding destination="8dn-KJ-qkk" name="value" keyPath="values.delaySeconds" id="z5w-vh-g8e"/>
                                 </connections>
                             </textField>
-                            <textField verticalHuggingPriority="750" fixedFrame="YES" tag="3" translatesAutoresizingMaskIntoConstraints="NO" id="jiY-25-NTn">
-                                <rect key="frame" x="224" y="209" width="46" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="100" drawsBackground="YES" id="eOI-A5-v8e">
-                                    <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="xgx-cy-1cy"/>
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NQW-4w-uL2">
-                                <rect key="frame" x="161" y="277" width="56" height="17"/>
+                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NQW-4w-uL2">
+                                <rect key="frame" x="161" y="218" width="56" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="seconds" id="RxJ-wx-ALU">
                                     <font key="font" metaFont="system"/>
@@ -920,17 +915,8 @@ DQ
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yHh-Fi-nCI">
-                                <rect key="frame" x="277" y="212" width="85" height="16"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" title="%" id="yvh-i8-2lv">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MZL-wI-SzF">
-                                <rect key="frame" x="18" y="175" width="104" height="17"/>
+                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MZL-wI-SzF">
+                                <rect key="frame" x="16" y="136" width="104" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="After capture..." id="QdA-XC-HBK">
                                     <font key="font" metaFont="systemBold"/>
@@ -939,9 +925,9 @@ DQ
                                 </textFieldCell>
                             </textField>
                             <button tag="6" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A1i-0E-HhG">
-                                <rect key="frame" x="30" y="151" width="54" height="18"/>
+                                <rect key="frame" x="28" y="112" width="128" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="check" title="Beep" bezelStyle="regularSquare" imagePosition="left" inset="2" id="AkP-Y4-s2A">
+                                <buttonCell key="cell" type="check" title="Play system beep" bezelStyle="regularSquare" imagePosition="left" inset="2" id="AkP-Y4-s2A">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -950,7 +936,7 @@ DQ
                                 </connections>
                             </button>
                             <button tag="8" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cg6-rL-c7W">
-                                <rect key="frame" x="30" y="107" width="339" height="18"/>
+                                <rect key="frame" x="28" y="88" width="339" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="check" title="Open screenshot in Preview (or video in QuickTime)" bezelStyle="regularSquare" imagePosition="left" inset="2" id="WhO-pP-lXD">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -960,19 +946,8 @@ DQ
                                     <binding destination="wNl-lz-Ezq" name="value" keyPath="values.openPreviewSetting" id="bW5-xw-kr4"/>
                                 </connections>
                             </button>
-                            <button tag="7" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JHG-JY-1eB">
-                                <rect key="frame" x="30" y="129" width="297" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="check" title="Show preview thumbnail (no automatic save)" bezelStyle="regularSquare" imagePosition="left" inset="2" id="C9W-6o-yQp">
-                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <binding destination="wNl-lz-Ezq" name="value" keyPath="values.showThumbSetting" id="SG4-5j-AAO"/>
-                                </connections>
-                            </button>
                             <button tag="9" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PZw-DA-gfV">
-                                <rect key="frame" x="30" y="85" width="173" height="18"/>
+                                <rect key="frame" x="28" y="66" width="173" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="check" title="Open screenshot in Mail" bezelStyle="regularSquare" imagePosition="left" inset="2" id="gKg-jz-53D">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -983,7 +958,7 @@ DQ
                                 </connections>
                             </button>
                             <button tag="10" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IfX-HO-zGd">
-                                <rect key="frame" x="30" y="63" width="209" height="18"/>
+                                <rect key="frame" x="28" y="44" width="209" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="check" title="Open screenshot in Messages" bezelStyle="regularSquare" imagePosition="left" inset="2" id="0wG-Nm-LsT">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -993,19 +968,8 @@ DQ
                                     <binding destination="wNl-lz-Ezq" name="value" keyPath="values.openMessagesSetting" id="f2N-ES-2Wd"/>
                                 </connections>
                             </button>
-                            <button tag="11" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NpX-nM-n0w">
-                                <rect key="frame" x="30" y="41" width="207" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="check" title="Automatically upload to Imgur" bezelStyle="regularSquare" imagePosition="left" inset="2" id="eVM-Hr-oXw">
-                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <binding destination="wNl-lz-Ezq" name="value" keyPath="values.uploadImgurSetting" id="vgs-Yo-5W0"/>
-                                </connections>
-                            </button>
                             <button tag="12" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tn5-Gs-YsX">
-                                <rect key="frame" x="30" y="19" width="180" height="18"/>
+                                <rect key="frame" x="28" y="20" width="180" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="check" title="Save to my Photos library" bezelStyle="regularSquare" imagePosition="left" inset="2" id="e2y-ql-peh">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -1023,51 +987,7 @@ DQ
                 <userDefaultsController id="8dn-KJ-qkk"/>
                 <userDefaultsController id="wNl-lz-Ezq"/>
             </objects>
-            <point key="canvasLocation" x="439" y="1183"/>
-        </scene>
-        <!--Donate-->
-        <scene sceneID="bVR-br-V2j">
-            <objects>
-                <viewController title="Donate" showSeguePresentationStyle="single" id="zgu-eI-lq4" customClass="PrefsController" customModule="Quicksnap" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="BG5-Ef-oCU">
-                        <rect key="frame" x="0.0" y="0.0" width="416" height="135"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dHK-zi-yUW">
-                                <rect key="frame" x="18" y="59" width="380" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" controlSize="mini" sendsActionOnEndEditing="YES" title="Thanks for using Quicksnap. If you like this app, please consider donating the cost of a coffee to the developer!" id="acy-AB-aDF">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="plG-eF-7d9">
-                                <rect key="frame" x="18" y="98" width="256" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" controlSize="mini" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="This app is coffeeware" id="u7o-69-Whz">
-                                    <font key="font" metaFont="systemBold"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sUy-za-fQ3">
-                                <rect key="frame" x="154" y="13" width="108" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="push" title="Donate ☕️" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="pHD-pn-3vU">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="donateClick:" target="zgu-eI-lq4" id="xl3-Pl-YUG"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                    </view>
-                </viewController>
-                <customObject id="M28-Ak-9Y8" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-11" y="1256.5"/>
+            <point key="canvasLocation" x="439" y="1153.5"/>
         </scene>
         <!--Watermark-->
         <scene sceneID="kNe-Ao-8OV">
@@ -1083,7 +1003,7 @@ DQ
                                 <imageCell key="cell" selectable="YES" editable="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" imageFrameStyle="grayBezel" image="NSShareTemplate" id="J3c-Gn-bgf"/>
                                 <accessibility description="Drop watermark image here"/>
                             </imageView>
-                            <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DWZ-LP-40E">
+                            <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DWZ-LP-40E">
                                 <rect key="frame" x="177" y="140" width="237" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Watermark text" drawsBackground="YES" id="j0D-7T-AsS">
@@ -1123,7 +1043,7 @@ DQ
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <stepperCell key="cell" continuous="YES" alignment="left" maxValue="100" id="Hs0-UX-8OC"/>
                             </stepper>
-                            <textField toolTip="Watermark text size" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A87-Ic-yQN">
+                            <textField toolTip="Watermark text size" focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A87-Ic-yQN">
                                 <rect key="frame" x="308" y="101" width="39" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" title="18 pt" drawsBackground="YES" id="YRq-LG-C5S">
@@ -1135,7 +1055,7 @@ DQ
                                     <binding destination="wNl-lz-Ezq" name="value" keyPath="values.watermarkFontSize" id="Agd-Xx-9Hb"/>
                                 </connections>
                             </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WDH-PO-yrg">
+                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WDH-PO-yrg">
                                 <rect key="frame" x="175" y="20" width="214" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" alignment="left" title="Drop an image to the left to use it as a watermark on your screenshots." id="JJc-1n-CkL">
@@ -1153,13 +1073,12 @@ DQ
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="2TH-Ue-i25"/>
+        <segue reference="rg7-C8-t6U"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="NSShareTemplate" width="19" height="23"/>
         <image name="fullscreen" width="40" height="40"/>
         <image name="fullscreen recording" width="40" height="40"/>
-        <image name="icons8-cafe-96" width="512" height="512"/>
         <image name="icons8-screenshot-96" width="512" height="512"/>
         <image name="icons8-settings-96" width="512" height="512"/>
         <image name="selection" width="40" height="40"/>
